@@ -25,12 +25,12 @@ const Layout = ({sidebarOpen,setSidebarOpen}) => {
             <div className="w-full overflow-hidden lg:pl-[260px] pt-[78px] py-4 px-4">
               <Routes>
             
-                <Route path="/cmda/transaction-report" element={<TransactionReport />} />
-                <Route path="/cmda/user-master" element={<UserMaster />} />
-                <Route path="/cmda/user-access-rights" element={<UserAccessRights />} />
-                <Route path="/cmda/localbody-report" element={<ZonewiseReport />} />
-                <Route path="/cmda/headerwise-report" element={<HeaderwiseReport />} />
-                <Route path="/cmda/gatewaywise-report" element={<GatewaywiseReport />} />
+                <Route path="/transaction-report" element={<TransactionReport />} />
+                <Route path="/user-master" element={<UserMaster />} />
+                <Route path="/user-access-rights" element={<UserAccessRights />} />
+                <Route path="/localbody-report" element={<ZonewiseReport />} />
+                <Route path="/headerwise-report" element={<HeaderwiseReport />} />
+                <Route path="/gatewaywise-report" element={<GatewaywiseReport />} />
               </Routes>
             </div>
           </div>

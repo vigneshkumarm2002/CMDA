@@ -24,10 +24,10 @@ function App() {
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
        <Layout sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
        <Routes>
-       <Route path="/cmda/payment" element={<FileDetails />} />
-                <Route path="/cmda/checkout" element={<Checkout />} />
-                <Route path="/cmda/payment-page" element={<PaymentPage />} />
-                <Route path="/cmda/payment-confirm" element={<PaymentConfirm />} />
+       <Route path="/payment" element={<FileDetails />} />
+                <Route path="/checkout" element={<Checkout />} />
+                <Route path="/payment-page" element={<PaymentPage />} />
+                <Route path="/payment-confirm" element={<PaymentConfirm />} />
        </Routes>
       </div>
     </Router>
