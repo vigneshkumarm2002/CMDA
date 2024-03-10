@@ -3,7 +3,7 @@ import { ArrowDownTrayIcon, PrinterIcon } from "@heroicons/react/24/outline";
 
 const Table = ({ data, pagination=true }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [rowsPerPage] = useState(pagination ? data.length : 5);
+  const [rowsPerPage] = useState(pagination ?5 : data.length );
  
 
   // Calculate indexes for pagination
