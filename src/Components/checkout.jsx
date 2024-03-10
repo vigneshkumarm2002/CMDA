@@ -2,7 +2,7 @@ import React from 'react'
 
 const Checkout = () => {
   return (
-    <div className="flex flex-col w-full md:max-w-[800px] mx-auto ">
+    <div className="flex flex-col w-full md:max-w-[800px] mx-auto  ">
     <div className="flex min-h-full flex-1 flex-col justify-center  py-4 sm:px-6 lg:px-8">
       <div className="sm:bg-white sm:px-6 sm:py-6 sm:shadow sm:rounded-lg  w-full ">
         <div className="bg-primary pb-6 text-gray-900   rounded-t-lg">
