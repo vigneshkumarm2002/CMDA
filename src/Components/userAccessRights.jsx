@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserAccessRights = () => {
   return (
-    <div>UserAccessRights</div>
+    <h1 className="text-xl font-medium  pb-4">User Access Rights</h1>
   )
 }
 

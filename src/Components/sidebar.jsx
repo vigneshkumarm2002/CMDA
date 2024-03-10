@@ -37,7 +37,7 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
       current: false,
     },
     {
-      name: "Localbody Reports",
+      name: "Local Body Reports",
       href: "/localbody-report",
       icon: BuildingOfficeIcon,
       current: false,
@@ -128,7 +128,7 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
                     </div>
                   </Transition.Child>
                   {/* Sidebar component, swap this element with another sidebar if you like */}
-                  <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#0066ff] pb-4">
+                  <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#F9FAFB]  pb-4">
                     <div className="flex h-16 shrink-0 items-center px-6">
                     <img
                     className="h-8 w-auto"
@@ -147,13 +147,13 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
                         onClick={() => setSidebarOpen(false)}
                         className={classNames(
                           item.current
-                            ? "bg-[#000dff] text-white"
-                            : " text-white hover:bg-[#000dff]",
+                            ? "bg-gray-300 text-gray-900"
+                            : " text-gray-900 hover:bg-gray-300",
                           "group flex gap-x-3 items-center  px-4 py-2 text-sm leading-6 font-medium"
                         )}
                       >
                         <item.icon
-                          className="h-5 w-5 shrink-0 text-white"
+                          className="h-5 w-5 shrink-0 text-gray-900"
                           aria-hidden="true"
                         />
                         {item.name}
@@ -172,9 +172,9 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
         </Transition.Root>
 
         {/* Static sidebar for desktop */}
-        <div className="hidden pt-[64px] lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-[260px] lg:flex-col">
+        <div className="hidden mt-[64px] lg:fixed l lg:inset-y-0 lg:z-50 lg:flex lg:w-[260px] lg:flex-col border-r-2 ">
         {/* Sidebar component, swap this element with another sidebar if you like */}
-        <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#0066ff]  py-4">
+        <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#F9FAFB]  py-4">
           <nav className="flex flex-1 flex-col">
             <ul role="list" className="flex flex-1 flex-col gap-y-7">
               <li>
@@ -185,13 +185,13 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
                         to={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-[#000dff] text-white"
-                            : " text-white hover:bg-[#000dff]",
+                            ? "bg-gray-300 text-gray-900"
+                            : " text-gray-900 hover:bg-gray-300",
                           "group flex gap-x-3 items-center  px-4 py-2 text-sm leading-6 font-medium"
                         )}
                       >
                         <item.icon
-                          className="h-5 w-5 shrink-0 text-white"
+                          className="h-5 w-5 shrink-0 text-gray-900"
                           aria-hidden="true"
                         />
                         {item.name}

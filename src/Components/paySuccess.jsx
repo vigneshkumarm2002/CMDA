@@ -52,7 +52,7 @@ export default function PaySuccess({open, setOpen}) {
                   <Link
                   to={"/payment-confirm"}
                 
-                    className=" inline-flex mx-auto w-[100%] justify-center rounded-md bg-[#0066ff] px-3 py-2 text-sm font-medium text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className=" inline-flex mx-auto w-[100%] justify-center rounded-md bg-[#0066ff] px-3 py-2 text-sm font-medium text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                   >
                    Check receipt
                   </Link>

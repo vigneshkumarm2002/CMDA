@@ -102,6 +102,7 @@ const GatewaywiseReport = () => {
       
   return (
 <div className='flex flex-col gap-4'>
+<h1 className="text-xl font-medium ">Gatewaywise Reports</h1>
 <div className="w-full md:w-[500px] text-left mx-auto border border-gray-300 px-4 py-6 rounded-md mt-4 flex flex-col gap-4 self-baseline">
       <div className="w-full flex flex-col sm:flex-row gap-4 ">
         <div className="w-full sm:w-[50%]">
@@ -113,7 +114,7 @@ const GatewaywiseReport = () => {
               type="date"
               id="from-date"
               name="from-date"
-              className="px-2 py-3 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm outline-none"
+              className="px-2 py-2 block w-full rounded-md border border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm outline-none"
             />
           </div>
         </div>
@@ -126,7 +127,7 @@ const GatewaywiseReport = () => {
               type="date"
               id="to-date"
               name="to-date"
-              className="px-2 py-3 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm outline-none"
+              className="px-2 py-2 block w-full rounded-md border border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm outline-none"
             />
           </div>
         </div>
@@ -140,7 +141,7 @@ const GatewaywiseReport = () => {
           <select
             id="districtwise"
             name="districtwise"
-            className="px-2 py-3 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm outline-none"
+            className="px-2 py-2 block w-full rounded-md border border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm outline-none"
           >
             <option value="">All Districts</option>
             <option value="option1">Option1</option>

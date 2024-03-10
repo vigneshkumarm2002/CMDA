@@ -1,7 +1,8 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import LogoImage from "./../assets/logo.png"
+import LogoImage from "./../assets/cmda.png"
+import { Link } from 'react-router-dom'
 
 
 
@@ -12,7 +13,7 @@ function classNames(...classes) {
 export default function Header({sidebarOpen, setSidebarOpen}) {
      
   return (
-    <Disclosure as="nav" className="bg-gray-800 h-[64px] fixed w-full">
+    <Disclosure as="nav" className="bg-[#0066ff] h-[64px] fixed w-full">
       {({ open }) => (
         <>
           <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
@@ -59,12 +60,12 @@ export default function Header({sidebarOpen, setSidebarOpen}) {
               </p>
                       <Menu.Item>
                         {({ active }) => (
-                          <a
-                            href="#"
+                          <Link
+                            to={"/user-master"}
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             Sign out
-                          </a>
+                          </Link>
                         )}
                       </Menu.Item>
                     </Menu.Items>

@@ -6,7 +6,7 @@ const Checkout = () => {
     <div className="flex flex-col w-full md:max-w-[800px] mx-auto  py-4 px-4 ">
     <div className="flex min-h-full flex-1 flex-col justify-center  py-4 sm:px-6 lg:px-8">
       <div className="sm:bg-white sm:px-6 sm:py-6 sm:shadow sm:rounded-lg  w-full ">
-        <div className="bg-primary pb-6 text-gray-900   rounded-t-lg">
+        <div className="bg-primary pb-6  text-lg font-medium text-gray-900   rounded-t-lg">
          Checkout Confirmation
         </div>
 
@@ -59,12 +59,7 @@ const Checkout = () => {
             <p className="block text-base font-normal text-gray-700 w-[50%]">HDFC</p>
           </div>
 
-          <div className="flex flex-col sm:flex-row  gap-2 justify-between  ">
-            <h4 className="block text-sm font-medium text-gray-700">
-          Status :
-            </h4>
-            <p className="block text-base font-normal text-gray-700 w-[50%]">Paid</p>
-          </div>
+        
 
           </div>
       

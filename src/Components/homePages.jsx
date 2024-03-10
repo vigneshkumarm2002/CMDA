@@ -8,7 +8,7 @@ function FileDetails() {
     <div className="flex flex-col w-full md:max-w-[800px] mx-auto py-4 px-4  ">
       <div className="flex min-h-full flex-1 flex-col justify-center py-4 sm:px-6 lg:px-8">
         <div className="sm:bg-white sm:px-6 sm:py-6 sm:shadow sm:rounded-lg  w-full ">
-          <div className="bg-primary pb-6 text-gray-900   rounded-t-lg">
+          <div className="bg-primary  text-lg font-medium pb-6 text-gray-900   rounded-t-lg">
             File Details
           </div>
           <form className="space-y-6" action="#" method="POST">
@@ -26,7 +26,7 @@ function FileDetails() {
                     id="file-no"
                     name="file-no"
                     placeholder="TEMP/CMDA/0224/2023"
-                    class=" px-2 py-3 block w-full   rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    class=" px-2 py-3 block w-full   rounded-md border border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                   />
                 </div>
               </div>
@@ -42,7 +42,7 @@ function FileDetails() {
                   <select
                     id="challan-no"
                     name="challan-no"
-                    class="px-2 py-3 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                    class="px-2 py-3 block w-full rounded-md border border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
                   >
                     <option value="CMDA/PP/Ch/8112/2023">
                       CMDA/PP/Ch/8112/2023
@@ -160,16 +160,16 @@ function FileDetails() {
 
       <div className="flex   flex-col justify-center py-4 sm:px-6 lg:px-8">
         <div className=" sm:bg-white sm:shadow sm:rounded-lg sm:px-6 sm:py-6 w-full">
-          <div className="bg-primary text-gray-900 pb-6 rounded-t-lg">
+          <div className="bg-primary text-lg font-medium text-gray-900 pb-6 rounded-t-lg">
             Payment Option
           </div>
           <div className="">
-            <table className="w-full border-collapse px-2 py-4 text-sm text-gray-900">
-              <tbody className="bg-white divide-y divide-gray-200">
+            <table className="w-full  px-2 py-4 text-sm text-gray-900">
+              <tbody className="bg-white divide-y divide-gray-200 ">
                 <tr>
                   <td className="px-2 py-4 text-sm text-gray-900">PayU</td>
-                  <td className="px-2 py-4 text-sm text-gray-900 flex flex-col gap-2 pl-4">
-                    <div className="radio">
+                  <td className="px-2 py-4 text-sm text-gray-900   pl-4">
+                    <div className="radio ">
                       <label>
                         <input
                           type="radio"
@@ -180,7 +180,7 @@ function FileDetails() {
                          <span className="ml-2">Internet Banking</span>
                       </label>
                     </div>
-                    <div className="radio">
+                    <div className="radio pt-2">
                       <label>
                         <input
                           type="radio"
@@ -190,7 +190,7 @@ function FileDetails() {
                         <span className="ml-2">Credit Card</span> 
                       </label>
                     </div>
-                    <div className="radio ">
+                    <div className="radio pt-2">
                       <label>
                         <input
                           type="radio"
@@ -203,7 +203,7 @@ function FileDetails() {
                   </td>
                 </tr>
                 <tr>
-                  <td className="px-2 py-4 text-sm text-gray-900">
+                  <td className="px-2 py-4 text-sm text-gray-900 whitespace-normal">
                     eCollect Slip for NEFT / RTGS
                   </td>
                   <td className="px-2 py-4 text-sm text-gray-900 pl-4">
@@ -214,7 +214,7 @@ function FileDetails() {
                           name="optradio"
                           className="form-radio"
                         />
-                        <span className="ml-2">e-Payment Request Slip</span> 
+                        <span className="ml-2 whitespace-normal">e-Payment Request Slip</span> 
                       </label>
                     </div>
                   </td>
