@@ -80,8 +80,8 @@ const PaymentConfirm = () => {
         <div className="text-center mt-8 self-center">
           <Link
             to={"/payment"}
-            className="bg-white border w-fit  flex gap-2 justify-center items-center border-gray-300 text-gray-900 hover:bg-gray-50 font-medium py-2 px-4 rounded-md"
-          >
+            className="bg-white border shadow-sm border-gray-300 text-gray-900 hover:bg-gray-50 font-medium py-1.5 px-4 rounded">
+          
             Go back
           </Link>
         </div>

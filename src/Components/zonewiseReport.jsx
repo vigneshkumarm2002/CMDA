@@ -102,7 +102,7 @@ const ZonewiseReport = () => {
       
   return (
     <div className='flex flex-col gap-4'>
-    <div className="w-full md:w-[500px] text-left mx-auto mt-4 flex flex-col gap-4 self-baseline">
+    <div className="w-full md:w-[500px] text-left mx-auto border border-gray-300 px-4 py-6 rounded-md mt-4 flex flex-col gap-4 self-baseline">
       <div className="w-full flex flex-col sm:flex-row gap-4 ">
         <div className="w-full sm:w-[50%]">
           <label htmlFor="from-date" className="block text-sm font-medium text-gray-700">
@@ -152,10 +152,10 @@ const ZonewiseReport = () => {
       </div>
 
       <div className=" flex gap-4">
-        <button className="bg-[#0D6EFD]  text-white font-medium py-2 px-4 rounded">
+        <button className="bg-[#0066FF]  text-white font-medium shadow-sm py-1.5 px-4 rounded">
           Submit
         </button>
-        <button className="bg-white border border-gray-300 text-gray-900 hover:bg-gray-50 font-medium py-2 px-4 rounded">
+        <button className="bg-white border shadow-sm border-gray-300 text-gray-900 hover:bg-gray-50 font-medium py-1.5 px-4 rounded">
           Clear
         </button>
       </div>

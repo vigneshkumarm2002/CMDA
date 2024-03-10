@@ -128,7 +128,7 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
                     </div>
                   </Transition.Child>
                   {/* Sidebar component, swap this element with another sidebar if you like */}
-                  <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-indigo-600 pb-4">
+                  <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#0066ff] pb-4">
                     <div className="flex h-16 shrink-0 items-center px-6">
                     <img
                     className="h-8 w-auto"
@@ -147,8 +147,8 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
                         onClick={() => setSidebarOpen(false)}
                         className={classNames(
                           item.current
-                            ? "bg-indigo-700 text-white"
-                            : " text-white hover:bg-indigo-700",
+                            ? "bg-[#000dff] text-white"
+                            : " text-white hover:bg-[#000dff]",
                           "group flex gap-x-3 items-center  px-4 py-2 text-sm leading-6 font-medium"
                         )}
                       >
@@ -174,7 +174,7 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
         {/* Static sidebar for desktop */}
         <div className="hidden pt-[64px] lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-[260px] lg:flex-col">
         {/* Sidebar component, swap this element with another sidebar if you like */}
-        <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-indigo-600  py-4">
+        <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-[#0066ff]  py-4">
           <nav className="flex flex-1 flex-col">
             <ul role="list" className="flex flex-1 flex-col gap-y-7">
               <li>
@@ -185,8 +185,8 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
                         to={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-indigo-700 text-white"
-                            : " text-white hover:bg-indigo-700",
+                            ? "bg-[#000dff] text-white"
+                            : " text-white hover:bg-[#000dff]",
                           "group flex gap-x-3 items-center  px-4 py-2 text-sm leading-6 font-medium"
                         )}
                       >

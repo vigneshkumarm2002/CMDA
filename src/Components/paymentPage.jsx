@@ -15,22 +15,20 @@ const PaymentPage = () => {
         </div>
         <div className="flex gap-4 self-center mt-8">
                 <button
-                onClick={()=>setShowModal(true)} 
-                  className="flex justify-center items-center w-[100px] rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
+                onClick={()=>setShowModal(true)} className="bg-[#0066FF] flex justify-center w-[150px] text-white font-medium shadow-sm py-1.5 px-4 rounded">     
                   Pay
                 </button>
                 <Link
                 to={"/payment"}
                   type="submit"
-                  className="bg-white border w-[100px]  flex gap-2 justify-center items-center border-gray-300 text-gray-900 hover:bg-gray-50 font-medium py-2 px-4 rounded-md"
-                >
+                  className="bg-white border shadow-sm border-gray-300 flex justify-center text-gray-900 w-[150px] hover:bg-gray-50 font-medium py-1.5 px-4 rounded">
+                
                   Cancel
                 </Link>
               </div>
 
 
-              <PaySuccess open={showModal} setOpen={showModal} />
+              <PaySuccess open={showModal} setOpen={setShowModal} />
         </div>
   )
 }

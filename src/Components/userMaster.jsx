@@ -78,7 +78,7 @@ export default function UserMaster() {
                       value="user"
                       checked={role === "user"}
                       onChange={handleRoleChange}
-                      className="form-radio h-4 w-4 text-indigo-600 outline-none focus:outline-none"
+                      className="form-radio h-4 w-4 text-[#0066FF] outline-none focus:outline-none"
                     />
                     <span className="ml-2">User</span>
                   </label>
@@ -89,7 +89,7 @@ export default function UserMaster() {
                       value="admin"
                       checked={role === "admin"}
                       onChange={handleRoleChange}
-                      className="form-radio h-4 w-4 text-indigo-600 outline-none focus:outline-none"
+                      className="form-radio h-4 w-4 text-[#0066FF] outline-none focus:outline-none"
                     />
                     <span className="ml-2">Admin</span>
                   </label>
@@ -99,13 +99,13 @@ export default function UserMaster() {
               <div className="flex gap-4">
                 <button
                  onClick={()=> alert("Form Submitted")}
-                  className="flex justify-center items-center w-[50%] rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                 className="bg-[#0066FF] w-[50%]  text-white font-medium shadow-sm py-1.5 px-4 rounded"
                 >
                   Add
                 </button>
                 <button
                   type="submit"
-                  className="bg-white border w-[50%]  flex gap-2 justify-center items-center border-gray-300 text-gray-900 hover:bg-gray-50 font-medium py-2 px-4 rounded-md"
+                  className="bg-white border w-[50%] shadow-sm border-gray-300 text-gray-900 hover:bg-gray-50 font-medium py-1.5 px-4 rounded"
                 >
                   Cancel
                 </button>

@@ -24,13 +24,13 @@ const Table = ({ data }) => {
   };
 
   return (
-    <div className="w-full flex flex-col gap-4">
+    <div className="w-full flex flex-col gap-4 mt-4">
       <div className="ml-auto flex gap-4">
-        <button className="bg-white border flex gap-2 items-center border-gray-300 text-gray-900 hover:bg-gray-50 font-medium py-2 px-4 rounded-md">
+        <button   className="relative inline-flex gap-2 items-center rounded-md bg-white px-3 py-2 text-sm font-medium text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
           <PrinterIcon className="w-4 h-4 " />
           Print
         </button>
-        <button className="bg-white border flex gap-2 items-center border-gray-300 text-gray-900 hover:bg-gray-50 font-medium py-2 px-4 rounded-md">
+        <button   className="relative inline-flex gap-2 items-center rounded-md bg-white px-3 py-2 text-sm font-medium text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
           <ArrowDownTrayIcon className="w-4 h-4" />
           Export
         </button>
