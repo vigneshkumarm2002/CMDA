@@ -5,7 +5,7 @@ import PaySuccess from './paySuccess'
 const PaymentPage = () => {
     const [showModal, setShowModal]=useState(false)
   return (
-    <div className="flex flex-col w-full md:max-w-[800px] mx-auto ">
+    <div className="flex flex-col w-full md:max-w-[800px] mx-auto py-4 px-4 ">
     <div className="flex min-h-full flex-1 flex-col justify-center  py-4 sm:px-6 lg:px-8">
       <div className="sm:bg-white sm:px-6 sm:py-6 sm:shadow sm:rounded-lg  w-full ">
 
