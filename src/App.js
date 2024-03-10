@@ -9,11 +9,12 @@ import UserAccessRights from "./Components/userAccessRights";
 import ZonewiseReport from "./Components/zonewiseReport";
 import HeaderwiseReport from "./Components/headerwiseReport";
 import GatewaywiseReport from "./Components/gatewaywiseReport";
-import FileDetails from "./Components/homePages";
+import FileDetails from "./Components/payment";
 import Checkout from "./Components/checkout";
 import PaymentPage from "./Components/paymentPage";
 import PaymentConfirm from "./Components/payment-confirm";
 import Layout from "./Components/Layout";
+import PaymentIntro from "./Components/payment";
 
 function App() {
  
@@ -24,7 +25,7 @@ function App() {
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
        <Layout sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
        <Routes>
-       <Route path="/payment" element={<FileDetails />} />
+       <Route path="/payment" element={<PaymentIntro />} />
                 <Route path="/checkout" element={<Checkout />} />
                 <Route path="/payment-page" element={<PaymentPage />} />
                 <Route path="/payment-confirm" element={<PaymentConfirm />} />

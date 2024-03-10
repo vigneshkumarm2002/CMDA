@@ -4,6 +4,7 @@ import Table from './table'
 const HeaderwiseReport = () => {
     const data=[
         {
+          Action:"View",
           "Date": "08-03-2024",
           "Budget Header": "Advertisement Charge",
           "Applicant Name": "POTHYS GARMENTS",
@@ -23,6 +24,7 @@ const HeaderwiseReport = () => {
           "Payment Mode": "Credit Card"
         },
         {
+          Action:"View",
           "Date": "08-03-2024",
           "Budget Header": "Scrutiny Fees",
           "Applicant Name": "DUGAR HOUSING LIMITED",
@@ -42,6 +44,7 @@ const HeaderwiseReport = () => {
           "Payment Mode": "Debit Card"
         },
         {
+          Action:"View",
           "Date": "08-03-2024",
           "Budget Header": "Registration Charge",
           "Applicant Name": "Kushee",
@@ -61,6 +64,7 @@ const HeaderwiseReport = () => {
           "Payment Mode": "Credit Card"
         },
         {
+          Action:"View",
           "Date": "08-03-2024",
           "Budget Header": "Development Charge",
           "Applicant Name": "Karpagam",
@@ -80,6 +84,7 @@ const HeaderwiseReport = () => {
           "Payment Mode": "Net Banking"
         },
         {
+          Action:"View",
           "Date": "08-03-2024",
           "Budget Header": "Advertisement Charge",
           "Applicant Name": "Indian Builders",

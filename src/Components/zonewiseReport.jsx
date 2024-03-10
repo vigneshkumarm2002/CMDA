@@ -4,6 +4,7 @@ import Table from './table'
 const ZonewiseReport = () => {
     const data=[
         {
+          Action:"View",
           "Date": "08-03-2024",
           "Local Body": "GCC",
           "Applicant Name": "POTHYS GARMENTS",
@@ -23,6 +24,7 @@ const ZonewiseReport = () => {
           "Payment Mode": "Credit Card"
         },
         {
+          Action:"View",
           "Date": "08-03-2024",
           "Local Body": "Aminjikarai",
           "Applicant Name": "DUGAR HOUSING LIMITED",
@@ -42,6 +44,7 @@ const ZonewiseReport = () => {
           "Payment Mode": "Debit Card"
         },
         {
+          Action:"View",
           "Date": "08-03-2024",
           "Local Body": "Tiruvottiyur",
           "Applicant Name": "Kushee",
@@ -61,6 +64,7 @@ const ZonewiseReport = () => {
           "Payment Mode": "Credit Card"
         },
         {
+          Action:"View",
           "Date": "08-03-2024",
           "Local Body": "Guindy",
           "Applicant Name": "Karpagam",
@@ -80,6 +84,7 @@ const ZonewiseReport = () => {
           "Payment Mode": "Net Banking"
         },
         {
+          Action:"View",
           "Date": "08-03-2024",
           "Local Body": "Sholinganallur",
           "Applicant Name": "Indian Builders",

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 
 
-function FileDetails() {
+function  PaymentIntro() {
   return (
     <div className="flex flex-col w-full md:max-w-[800px] mx-auto py-4 px-4  ">
       <div className="flex min-h-full flex-1 flex-col justify-center py-4 sm:px-6 lg:px-8">
@@ -234,4 +234,4 @@ function FileDetails() {
   );
 }
 
-export default FileDetails;
+export default PaymentIntro;

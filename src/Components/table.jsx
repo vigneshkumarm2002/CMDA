@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { ArrowDownTrayIcon, PrinterIcon } from "@heroicons/react/24/outline";
 
-const Table = ({ data }) => {
+const Table = ({ data, pagination=true }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [rowsPerPage] = useState(5); // Number of rows per page
+  const [rowsPerPage] = useState(pagination ? data.length : 5);
+ 
 
   // Calculate indexes for pagination
   const indexOfLastRow = currentPage * rowsPerPage;
@@ -26,11 +27,11 @@ const Table = ({ data }) => {
   return (
     <div className="w-full flex flex-col gap-4 mt-4">
       <div className="ml-auto flex gap-4">
-        <button   className="relative inline-flex gap-2 items-center rounded-md bg-white px-3 py-2 text-sm font-medium text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
+        <button className="relative inline-flex gap-2 items-center rounded-md bg-white px-3 py-2 text-sm font-medium text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
           <PrinterIcon className="w-4 h-4 " />
           Print
         </button>
-        <button   className="relative inline-flex gap-2 items-center rounded-md bg-white px-3 py-2 text-sm font-medium text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
+        <button className="relative inline-flex gap-2 items-center rounded-md bg-white px-3 py-2 text-sm font-medium text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">
           <ArrowDownTrayIcon className="w-4 h-4" />
           Export
         </button>
@@ -50,12 +51,16 @@ const Table = ({ data }) => {
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
-            {currentRows.map((item, index) => (
-              <tr key={index}>
-                {Object.values(item).map((value, index) => (
+            {currentRows.map((item, rowIndex) => (
+              <tr key={rowIndex}>
+                {Object.entries(item).map(([key, value], cellIndex) => (
                   <td
-                    key={index}
-                    className="px-2 py-4 text-sm text-gray-900"
+                    key={cellIndex}
+                    className={`px-2 py-4 text-sm ${
+                      value === "View"
+                        ? "cursor-pointer text-blue-500"
+                        : "text-gray-900 "
+                    }`}
                   >
                     {value}
                   </td>
@@ -65,35 +70,40 @@ const Table = ({ data }) => {
           </tbody>
         </table>
       </div>
-      <div>
-        <nav
-          className="flex items-center justify-between border-t border-gray-200 bg-white py-4"
-          aria-label="Pagination"
-        >
-          <div className="block">
-            <p className="text-left text-sm text-gray-700">
-              Showing <span className="font-medium">{currentPage}</span> of{" "}
-              <span className="font-medium">{Math.ceil(data.length / rowsPerPage)}</span> pages
-            </p>
-          </div>
-          <div className="flex  justify-between sm:justify-end">
-            <button
-              onClick={prevPage}
-              disabled={currentPage === 1}
-              className="relative inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-medium text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0"
-            >
-              Previous
-            </button>
-            <button
-              onClick={nextPage}
-              disabled={indexOfLastRow >= data.length}
-              className="relative ml-3 inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-medium text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0"
-            >
-              Next
-            </button>
-          </div>
-        </nav>
-      </div>
+      {pagination && (
+        <div>
+          <nav
+            className="flex items-center justify-between border-t border-gray-200 bg-white py-4"
+            aria-label="Pagination"
+          >
+            <div className="block">
+              <p className="text-left text-sm text-gray-700">
+                Showing <span className="font-medium">{currentPage}</span> of{" "}
+                <span className="font-medium">
+                  {Math.ceil(data.length / rowsPerPage)}
+                </span>{" "}
+                pages
+              </p>
+            </div>
+            <div className="flex  justify-between sm:justify-end">
+              <button
+                onClick={prevPage}
+                disabled={currentPage === 1}
+                className="relative inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-medium text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0"
+              >
+                Previous
+              </button>
+              <button
+                onClick={nextPage}
+                disabled={indexOfLastRow >= data.length}
+                className="relative ml-3 inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-medium text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0"
+              >
+                Next
+              </button>
+            </div>
+          </nav>
+        </div>
+      )}
     </div>
   );
 };

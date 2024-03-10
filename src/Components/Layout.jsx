@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Sidebar from './sidebar';
-import FileDetails from './homePages';
+import FileDetails from './FileDetails';
 import Checkout from './checkout';
 import PaymentPage from './paymentPage';
 import PaymentConfirm from './payment-confirm';
@@ -11,6 +11,7 @@ import UserAccessRights from './userAccessRights';
 import ZonewiseReport from './zonewiseReport';
 import HeaderwiseReport from './headerwiseReport';
 import GatewaywiseReport from './gatewaywiseReport';
+import FileList from './fileList';
 
 const Layout = ({ sidebarOpen, setSidebarOpen }) => {
   const location = useLocation();
@@ -27,6 +28,8 @@ const Layout = ({ sidebarOpen, setSidebarOpen }) => {
       <div className={` ${shouldHideSidebar() ? 'pt-[78px]' : 'w-full overflow-hidden lg:pl-[260px] pt-[78px] py-4 px-4'}`}>
         <Routes>
           <Route path="/transaction-report" element={<TransactionReport />} />
+          <Route path="/file-list" element={<FileList />} />
+          <Route path="/file-details" element={<FileDetails />} />
           <Route path="/user-master" element={<UserMaster />} />
           <Route path="/user-access-rights" element={<UserAccessRights />} />
           <Route path="/localbody-report" element={<ZonewiseReport />} />

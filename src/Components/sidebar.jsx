@@ -7,6 +7,8 @@ import {
   BuildingOffice2Icon,
   BuildingOfficeIcon,
   ChartBarIcon,
+  ClipboardDocumentIcon,
+  DocumentIcon,
   UserCircleIcon,
   UserIcon,
   XMarkIcon,
@@ -28,6 +30,18 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
       name: "User Access Rights",
       href: "/user-access-rights",
       icon: UserCircleIcon,
+      current: false,
+    },
+    {
+      name: "File List",
+      href: "/file-list",
+      icon: DocumentIcon,
+      current: false,
+    },
+    {
+      name: "File Details",
+      href: "/file-details",
+      icon: ClipboardDocumentIcon,
       current: false,
     },
     {
