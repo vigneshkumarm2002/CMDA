@@ -14,20 +14,14 @@ import {BrowserRouter as Router, Routes, Route, useLocation } from "react-router
 import Sidebar from './sidebar';
 
 const Layout = ({sidebarOpen,setSidebarOpen}) => {
-    const location = useLocation();
 
-    // Define an array of routes where the sidebar should be hidden
-    const hideSidebarRoutes = ["/cmda/payment", "/cmda/checkout", "/cmda/payment-page", "/cmda/payment-confirm"];
-  
-    // Check if the current route matches any route in hideSidebarRoutes array
-    const shouldHideSidebar = hideSidebarRoutes.some(route => location.pathname.startsWith(route));
   
     return (
 
           <div className="flex lg:gap-4 ">
-            {!shouldHideSidebar && (
+      
               <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
-            )}
+         
             <div className="w-full overflow-hidden lg:pl-[260px] pt-[78px] py-4 px-4">
               <Routes>
             
