@@ -115,6 +115,7 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
                     <div className="absolute left-full top-0 flex w-16 justify-center pt-5">
                       <button
                         type="button"
+
                         className="-m-2.5 p-2.5"
                         onClick={() => setSidebarOpen(false)}
                       >
@@ -143,6 +144,7 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
                     <li key={item.name}>
                       <Link
                         to={item.href}
+                        onClick={() => setSidebarOpen(false)}
                         className={classNames(
                           item.current
                             ? "bg-indigo-700 text-white"
