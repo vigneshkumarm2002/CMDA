@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/cmda/static/css/main.ac73e2ef.css",
-    "main.js": "/cmda/static/js/main.50fc994b.js",
+    "main.js": "/cmda/static/js/main.a06c7359.js",
     "static/js/453.53264d6a.chunk.js": "/cmda/static/js/453.53264d6a.chunk.js",
     "static/media/cmda_payment.jpeg": "/cmda/static/media/cmda_payment.f2b62e827ac3810daf13.jpeg",
     "static/media/logo.png": "/cmda/static/media/logo.7cec87a5b0a93a4a199e.png",
     "index.html": "/cmda/index.html",
     "main.ac73e2ef.css.map": "/cmda/static/css/main.ac73e2ef.css.map",
-    "main.50fc994b.js.map": "/cmda/static/js/main.50fc994b.js.map",
+    "main.a06c7359.js.map": "/cmda/static/js/main.a06c7359.js.map",
     "453.53264d6a.chunk.js.map": "/cmda/static/js/453.53264d6a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac73e2ef.css",
-    "static/js/main.50fc994b.js"
+    "static/js/main.a06c7359.js"
   ]
 }
