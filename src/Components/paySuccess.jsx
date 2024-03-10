@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { CheckIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom'
 
 export default function PaySuccess({open, setOpen}) {
 
@@ -48,15 +49,13 @@ export default function PaySuccess({open, setOpen}) {
                   </div>
                 </div>
                 <div className="mt-5 sm:mt-6">
-                  <button
-                    type="button"
-                    className=" mx-auto w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    onClick={() => {
-                        window.location.href = './payment-confirm'
-                    }}
+                  <Link
+                  to={"/payment-confirm"}
+                
+                    className=" inline-flex mx-auto w-[100%] justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                    Check receipt
-                  </button>
+                  </Link>
                 </div>
               </Dialog.Panel>
             </Transition.Child>

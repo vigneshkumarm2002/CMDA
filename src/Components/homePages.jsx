@@ -1,14 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 
 function FileDetails() {
-
-    
-
-    const handleClick = () => {
-        window.location.href = './checkout';
-      };
   return (
     <div className="flex flex-col w-full md:max-w-[800px] mx-auto py-4 px-4  ">
       <div className="flex min-h-full flex-1 flex-col justify-center py-4 sm:px-6 lg:px-8">
@@ -231,9 +226,9 @@ function FileDetails() {
       </div>
 
       <div className="text-center mt-4 mb-4 self-center">
-        <button   onClick={handleClick} className="flex justify-center items-center w-[200px] rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+        <Link to="/checkout" className="flex justify-center items-center w-[200px] rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
           Pay
-        </button>
+        </Link>
       </div>
     </div>
   );

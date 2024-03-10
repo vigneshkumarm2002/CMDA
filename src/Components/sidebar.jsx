@@ -23,34 +23,34 @@ function classNames(...classes) {
 const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
 
   const navigationLinks = [
-    { name: "User Master", href: "/cmda/user-master", icon: UserIcon, current: true },
+    { name: "User Master", href: "/user-master", icon: UserIcon, current: true },
     {
       name: "User Access Rights",
-      href: "/cmda/user-access-rights",
+      href: "/user-access-rights",
       icon: UserCircleIcon,
       current: false,
     },
     {
       name: "Transaction Reports",
-      href: "/cmda/transaction-report",
+      href: "/transaction-report",
       icon: BanknotesIcon,
       current: false,
     },
     {
       name: "Localbody Reports",
-      href: "/cmda/localbody-report",
+      href: "/localbody-report",
       icon: BuildingOfficeIcon,
       current: false,
     },
     {
       name: "Headerwise Reports",
-      href: "/cmda/headerwise-report",
+      href: "/headerwise-report",
       icon: BuildingOffice2Icon,
       current: false,
     },
     {
       name: "Gatewaywise Reports",
-      href: "/cmda/gatewaywise-report",
+      href: "/gatewaywise-report",
       icon: ChartBarIcon,
       current: false,
     },

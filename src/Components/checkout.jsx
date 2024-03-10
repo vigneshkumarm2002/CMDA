@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Checkout = () => {
   return (
@@ -70,9 +71,9 @@ const Checkout = () => {
       </div>
 
       <div className="text-center mt-8 self-center">
-        <button  onClick={()=>window.location.href = './payment-page'} className="flex justify-center items-center w-[200px] rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+        <Link to={"/payment-page"} className="flex justify-center items-center w-[200px] rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
           Pay
-        </button>
+        </Link>
       </div>
     </div>
     </div>

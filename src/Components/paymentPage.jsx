@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import payImage from "./../assets/cmda_payment.jpeg"
 import PaySuccess from './paySuccess'
+import { Link } from 'react-router-dom'
 
 const PaymentPage = () => {
     const [showModal, setShowModal]=useState(false)
@@ -19,13 +20,13 @@ const PaymentPage = () => {
                 >
                   Pay
                 </button>
-                <button
-               onClick={()=>window.location.href = './'} 
+                <Link
+                to={"/payment"}
                   type="submit"
                   className="bg-white border w-[100px]  flex gap-2 justify-center items-center border-gray-300 text-gray-900 hover:bg-gray-50 font-medium py-2 px-4 rounded-md"
                 >
                   Cancel
-                </button>
+                </Link>
               </div>
 
 
