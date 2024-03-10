@@ -11,7 +11,7 @@ import {
   UserIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 
 
@@ -23,34 +23,34 @@ function classNames(...classes) {
 const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
 
   const navigationLinks = [
-    { name: "User Master", href: "/user-master", icon: UserIcon, current: true },
+    { name: "User Master", href: "/cmda/user-master", icon: UserIcon, current: true },
     {
       name: "User Access Rights",
-      href: "/user-access-rights",
+      href: "/cmda/user-access-rights",
       icon: UserCircleIcon,
       current: false,
     },
     {
       name: "Transaction Reports",
-      href: "/transaction-report",
+      href: "/cmda/transaction-report",
       icon: BanknotesIcon,
       current: false,
     },
     {
       name: "Localbody Reports",
-      href: "/localbody-report",
+      href: "/cmda/localbody-report",
       icon: BuildingOfficeIcon,
       current: false,
     },
     {
       name: "Headerwise Reports",
-      href: "/headerwise-report",
+      href: "/cmda/headerwise-report",
       icon: BuildingOffice2Icon,
       current: false,
     },
     {
       name: "Gatewaywise Reports",
-      href: "/gatewaywise-report",
+      href: "/cmda/gatewaywise-report",
       icon: ChartBarIcon,
       current: false,
     },
@@ -141,8 +141,8 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
                 <ul role="list" className=" space-y-1">
                   {navigation.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
+                      <Link
+                        to={item.href}
                         className={classNames(
                           item.current
                             ? "bg-indigo-700 text-white"
@@ -155,7 +155,7 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
                           aria-hidden="true"
                         />
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -179,8 +179,8 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
                 <ul role="list" className=" space-y-1">
                   {navigation.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
+                      <Link
+                        to={item.href}
                         className={classNames(
                           item.current
                             ? "bg-indigo-700 text-white"
@@ -193,7 +193,7 @@ const Sidebar = memo(({ sidebarOpen, setSidebarOpen }) => {
                           aria-hidden="true"
                         />
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

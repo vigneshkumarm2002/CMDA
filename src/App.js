@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {HashRouter as Router, Routes, Route } from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./Components/header";
 import Sidebar from "./Components/sidebar";
@@ -25,16 +25,16 @@ function App() {
           <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
           <div className="w-full overflow-hidden lg:pl-[260px] pt-[78px] py-4 px-4">
             <Routes>
-            <Route path="/" element={<FileDetails />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/payment-page" element={<PaymentPage />} />
-            <Route path="/payment-confirm" element={<PaymentConfirm />} />
-              <Route path="/transaction-report" element={<TransactionReport />} />
-              <Route path="/user-master" element={<UserMaster />} />
-              <Route path="/user-access-rights" element={<UserAccessRights />} />
-              <Route path="/localbody-report" element={<ZonewiseReport />} />
-              <Route path="/headerwise-report" element={<HeaderwiseReport />} />
-              <Route path="/gatewaywise-report" element={<GatewaywiseReport />} />
+            <Route path="/cmda/" element={<FileDetails />} />
+            <Route path="/cmda/checkout" element={<Checkout />} />
+            <Route path="/cmda/payment-page" element={<PaymentPage />} />
+            <Route path="/cmda/payment-confirm" element={<PaymentConfirm />} />
+              <Route path="/cmda/transaction-report" element={<TransactionReport />} />
+              <Route path="/cmda/user-master" element={<UserMaster />} />
+              <Route path="/cmda/user-access-rights" element={<UserAccessRights />} />
+              <Route path="/cmda/localbody-report" element={<ZonewiseReport />} />
+              <Route path="/cmda/headerwise-report" element={<HeaderwiseReport />} />
+              <Route path="/cmda/gatewaywise-report" element={<GatewaywiseReport />} />
             </Routes>
           </div>
         </div>
